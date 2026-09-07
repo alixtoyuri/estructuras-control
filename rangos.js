@@ -14,8 +14,17 @@ Si es mayor a 20:
 
 Si es menor a 1:
 "Es menor que 1"
-
-Parece sencillo, pero quiero que pienses:
-
-¿Estas condiciones son mutuamente excluyentes?
 */
+let num = Number(prompt("Dame un numero: "));
+
+if(num < 1){
+  console.log("Es menor que 1");
+} else if(num >=1 && num <=10){
+  console.log("Está entre 1 y 10");
+} else if(num >=11 && num <= 20){
+  console.log("Está entre 11 y 20");
+} else if(num >= 21){
+  console.log("Es mayor que 20");
+}  else {
+  console.log("No es un número");
+}
