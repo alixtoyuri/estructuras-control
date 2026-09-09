@@ -29,3 +29,37 @@ Resultado:
 Adolescente
 Hace calor
 */
+
+let edad = Number(prompt("Edad: "));
+let temp= Number(prompt("Temperatura: "));
+let result="";
+if(edad < 0){
+  result +=" Edad Invalida ";
+}
+if(edad>=0 && edad <=12){
+  result += " Niño ";
+}
+if (edad >= 13 && edad <=17){
+  result += " Adolescente "; 
+}
+if(edad >= 18){
+  result += " Adulto ";
+}
+if (temp < 10){
+  result += " Hace frío ";
+} 
+if(temp >= 10 && temp <= 25){
+  result += " Temperatura agradable ";
+}
+if(temp > 25){
+  result += " Hace calor ";
+}
+if(result === ""){
+  return String(result);
+}
+
+console.log(result);
+
+
+
+
