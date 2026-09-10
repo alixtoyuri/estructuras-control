@@ -1,0 +1,16 @@
+/*
+Ejercicio 2 — Contar del 1 al 10
+
+Crea un programa que muestre:
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+*/
