@@ -12,3 +12,6 @@ Debes utilizar un for.
 
 El mensaje debe aparecer exactamente 5 veces.
 */
+for (let i= 1; i <= 5; i++){
+    console.log("Hola");
+}
