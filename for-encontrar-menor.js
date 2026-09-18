@@ -9,3 +9,16 @@ Ejemplo:
 
 Resultado: El número menor es 2.
 */
+let menor = Number(prompt("Número 1: "));
+
+for (let i = 2; i <= 5; i++) {
+
+    let numero = Number(prompt("Número "+i+" : "));
+
+    if (numero < menor) {
+        menor = numero;
+    }
+
+}
+
+console.log("El menor es: "+menor);
