@@ -8,3 +8,16 @@ Por ejemplo:
 
 Resultado: El número mayor es 21.
 */
+let mayor = Number(prompt("Número 1: "));
+
+for (let i = 2; i <= 5; i++) {
+
+    let numero = Number(prompt("Número "+i+" : "));
+
+    if (numero> mayor) {
+        mayor = numero;
+    }
+
+}
+
+console.log("El mayor es: "+mayor);
