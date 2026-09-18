@@ -20,3 +20,23 @@ Resultado:
 Suma: 150
 Promedio: 30
 */
+let numeros = Number(prompt("¿Cuántos números deseas ingresar?: "));
+let suma = 0;
+for(let i=1; i<= numeros; i++){
+    let sumar = Number(prompt("Dame los numeros: "));
+  suma +=sumar;
+}
+let promedio = suma/numeros;
+console.log(promedio);
+console.log(suma);
+
+//SEGUNDA SOLUCIÓN
+let numeros = Number(prompt("¿Cuántos números deseas ingresar?: "));
+let suma = 0;
+for(let i=1; i<= numeros; i++){
+    let sumar = Number(prompt("Dame el "+i+" numero: "));
+  suma +=sumar;
+}
+let promedio = suma/numeros;
+console.log("El promedio total es de: "+promedio);
+console.log("La suma total es de: "+suma);
