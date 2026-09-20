@@ -40,3 +40,20 @@ for(let i=1; i<= numeros; i++){
 let promedio = suma/numeros;
 console.log("El promedio total es de: "+promedio);
 console.log("La suma total es de: "+suma);
+
+
+//TERCERA SOLUCIÓN
+let numeros = Number(prompt("¿Cuántos números deseas ingresar? "));
+let sumaNumeros = 0;
+let entrada = "";
+
+for(let i = 1; i <=numeros; i++){
+  let numero = Number(prompt("Número "+i+": "));
+  entrada += numero +", ";
+  sumaNumeros += numero;
+}
+let promedio = sumaNumeros/numeros;
+
+console.log("Entrada: "+entrada);
+console.log("Suma: "+sumaNumeros);
+console.log("Promedio: "+promedio);
