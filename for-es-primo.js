@@ -16,3 +16,19 @@ Por ejemplo:
 13 → primo
 15 → no primo
 */
+let numero = Number(prompt("Digita un número: "));
+let esPrimo = true;
+
+for (let i = 2; i < numero; i++) {
+
+    if (numero%i===0) {
+        esPrimo =false;
+    }
+
+}
+
+if (esPrimo) {
+    console.log("Es primo");
+} else {
+    console.log("No es primo");
+}
