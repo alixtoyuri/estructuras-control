@@ -32,3 +32,48 @@ if (esPrimo) {
 } else {
     console.log("No es primo");
 }
+
+
+//SEGUNDA SOLUCIÓN
+let numero = Number(prompt("Digita un número: "));
+let esPrimo = true;
+
+for (let i = 2; i < numero; i++) {
+  
+    if (numero%i===0) {
+        esPrimo =false;
+    } 
+
+}
+
+if(numero === 0){
+  console.log("No es primo");
+  } else if(numero === 1){
+      console.log("No es primo");
+  } else if(esPrimo){
+      console.log("Es primo");
+  } else {
+       console.log("No es primo");
+}
+
+
+//TERCERA SOLUCIÓN
+let numero = Number(prompt("Digita un número: "));
+
+if (numero <= 1) {
+    console.log("No es primo");
+} else {
+    let esPrimo = true;
+
+    for (let i = 2; i < numero; i++) {
+        if (numero % i === 0) {
+            esPrimo = false;
+        }
+    }
+
+    if (esPrimo) {
+        console.log("Es primo");
+    } else {
+        console.log("No es primo");
+    }
+}
