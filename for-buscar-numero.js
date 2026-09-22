@@ -20,3 +20,17 @@ Objetivo
 Aquí el for empieza a utilizarse como una herramienta para:
 recorrer información y buscar algo dentro de ella.
 */
+let numero =Number(prompt("Dame un número: "));
+let arreglo = [4, 8, 15, 16, 23, 42];
+let resultado = false;
+
+for (let i= 0; i< arreglo.length; i++){
+  if(numero === arreglo[i]){
+    resultado = true;  
+  } 
+}
+if(resultado){
+  console.log("El número sí existe.");
+} else{
+  console.log("El número no existe.");
+}
