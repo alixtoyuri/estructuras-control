@@ -89,4 +89,78 @@ console.log("\nSuma: "+suma);
 console.log("Promedio: "+promedio);
 
 
+//2° SOLUCIÓN
+let numeros = Number(prompt("cuántos números desea introducir: "));
 
+let positivos = 0;
+let negativos = 0;
+let ceros = 0;
+let pares = 0;
+let impares = 0;
+let suma = 0;
+let entrada = "";
+
+let mayor;
+let menor;
+
+
+
+for (let i = 1; i <= numeros; i++) {
+    let numero = Number(prompt("Número "+i+": "));
+    suma +=numero;
+    entrada += numero+", " ; 
+    
+    
+    if(numero%2===0){
+        pares++;
+    } 
+
+    if(numero % 2 !== 0) {
+        impares++;
+    } 
+
+    if (numero > 0) {
+        positivos++;
+    } 
+
+    if(numero < 0){
+        negativos++;
+    } 
+
+    if(numero === 0){
+        ceros++;
+    } 
+
+   
+    if (i === 1) {
+        mayor = numero;
+        menor = numero;
+    } else {
+        if (numero > mayor) {
+            mayor = numero;
+        }
+
+        if (numero < menor) {
+            menor = numero;
+        }
+    }
+}
+
+let promedio = suma/numeros;
+
+console.log("Cantidad de Números: "+ numeros);
+
+console.log("\nPositivos: "+positivos);
+console.log("Negativos: "+negativos);
+console.log("Ceros: "+ceros);
+
+console.log("Pares: "+pares);
+console.log("Impares: "+impares);
+
+console.log("Mayor: "+mayor);
+console.log("Menor: "+menor);
+
+console.log("\nSuma: "+suma);
+console.log("Promedio: "+promedio);
+
+console.log("Datos de entrada: "+entrada);
