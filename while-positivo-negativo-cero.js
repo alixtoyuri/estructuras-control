@@ -46,3 +46,16 @@ while(i===s){
 
 
 //SEGUNDA SOLUCIÓN COMPLETA
+let i = "s"; 
+
+while(i==="s"){ 
+  let numero = Number(prompt("Dame un número: ")); 
+  if(numero > 0){
+    console.log("Positivo"); 
+  } else if( numero < 0){ 
+    console.log("Negativo"); 
+  } else if(numero === 0) { 
+    console.log("Cero"); 
+  } 
+ i = prompt ("¿Quieres introducir otro número? \n s/n: "); 
+} 
