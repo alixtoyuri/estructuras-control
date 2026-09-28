@@ -28,3 +28,21 @@ Puede ser:
 
 La condición depende del usuario.
 */
+let numero = 0;
+let i = "s";
+let s = "s";
+
+while(i===s){
+    if(numero > 0){
+        console.log("Positivo");
+    } else if( numero < 0){
+        console.log("Negativo");
+    } else if(numero === 0) {
+        console.log("Cero");
+    }
+    i++;
+}
+
+
+
+//SEGUNDA SOLUCIÓN COMPLETA
