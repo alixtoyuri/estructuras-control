@@ -16,3 +16,17 @@ El número es menor.
 Cuando acierte:
 ¡Correcto!
 */
+let secreto = 7;
+let numero = Number(prompt("¿Cuál es el número secreto: "));
+
+while(secreto !== numero){
+  
+  if(numero > secreto){
+    console.log("El número es mayor");
+  } else if(numero < secreto){
+    console.log("El número es menor");
+  }
+  numero = Number(prompt("¿Cuál es el número secreto: "));
+}
+
+console.log("Correcto");
