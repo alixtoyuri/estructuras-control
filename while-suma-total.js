@@ -16,3 +16,12 @@ Ejemplo
 
 Resultado: Suma total: 26
 */
+let numero = Number(prompt("Dame un numero: "));
+let resultado= 0;
+
+while( numero !== 0) {
+    resultado = resultado + numero;
+    numero = Number(prompt("Dame otro numero: "));
+}
+
+console.log("Suma total: "+resultado);
