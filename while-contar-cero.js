@@ -13,3 +13,12 @@ Ejemplo:
 
 Resultado: Se introdujeron 4 números.
 */
+let numero = Number(prompt("Dame un numero: "));
+let resultado= 0;
+
+while( numero !== 0) {
+    resultado = resultado + 1;
+    numero = Number(prompt("Dame otro numero: "));
+}
+
+console.log("\nSe introdujeron "+resultado+" números.");
