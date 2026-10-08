@@ -16,3 +16,15 @@ Ejemplo
 Resultado:
 Mayor: 21
 */
+let numero = Number(prompt("Digita un numero: "));
+let mayor = numero;
+
+while(numero !== 0){
+
+    if (numero > mayor ){
+        mayor = numero;
+    }
+  numero = Number(prompt("Digita un numero: "));
+}
+console.log("Terminar");
+console.log("El numero mayor es: "+mayor);
