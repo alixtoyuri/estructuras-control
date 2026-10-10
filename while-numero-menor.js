@@ -13,3 +13,16 @@ Ejemplo:
 Resultado:
 Menor: 3
 */
+let numero = Number(prompt("Digita un numero: "));
+let menor = numero;
+
+while(numero !==0){
+  
+    if(numero < menor){
+        menor=numero;
+    }
+    numero = Number(prompt("Digita otro numero: "));
+}
+
+console.log("Terminar");
+console.log("El numero menor es: "+menor);
